@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35828.75
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visma.MarketPlace.Web", "Visma.MarketPlace.Web\Visma.MarketPlace.Web.csproj", "{674B29D1-7A0F-1850-98F7-B3F55DD34B38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visma.MarketPlace", "Visma.MarketPlace\Visma.MarketPlace.csproj", "{05DD922E-1DCD-4063-AB21-194F1ED22492}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{674B29D1-7A0F-1850-98F7-B3F55DD34B38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{674B29D1-7A0F-1850-98F7-B3F55DD34B38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{674B29D1-7A0F-1850-98F7-B3F55DD34B38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{674B29D1-7A0F-1850-98F7-B3F55DD34B38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05DD922E-1DCD-4063-AB21-194F1ED22492}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05DD922E-1DCD-4063-AB21-194F1ED22492}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05DD922E-1DCD-4063-AB21-194F1ED22492}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05DD922E-1DCD-4063-AB21-194F1ED22492}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7D119B97-D943-483E-AD61-8FF3A3AFD075}
+	EndGlobalSection
+EndGlobal
