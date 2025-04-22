@@ -13,10 +13,13 @@
             return _context.User.AsQueryable<User>(); 
         }
 
-        public void Add(User user)
+        public User Add(User user)
         {
-             _context.User.Add(user); 
+            _context.User.Add(user);
+            _context.SaveChanges();
+            return user;
         }
+
         public void AddRange(List<User> users)
         {
             _context.User.AddRange(users);

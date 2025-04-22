@@ -5,5 +5,7 @@
     public interface IUserData
     {
         IQueryable<User> Get();
+
+        User Add(User user);
     }
 }

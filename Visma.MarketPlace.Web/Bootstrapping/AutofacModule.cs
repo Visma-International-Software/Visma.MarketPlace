@@ -5,6 +5,7 @@
     using Visma.MarketPlace.Database;
     using Visma.MarketPlace.Users.Data;
     using Visma.MarketPlace.Users.Querries;
+    using Visma.MarketPlace.Users.Transactions;
 
     public class AutofacModule : Module
     {
@@ -19,6 +20,7 @@
                 .InstancePerLifetimeScope();
 
             builder.RegisterScoped<IGetAllUsers, GetAllUsers>();
+            builder.RegisterScoped<IAddUser, AddUser>();
             builder.RegisterScoped<IUserData, UserData>();            
         }
     }

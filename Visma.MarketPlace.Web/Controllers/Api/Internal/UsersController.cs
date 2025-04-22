@@ -5,11 +5,15 @@
     using Visma.MarketPlace.Bootstrapping.DependencyInjection.Autofac;
     using Visma.MarketPlace.Users.Entities;
     using Visma.MarketPlace.Users.Querries;
+    using Visma.MarketPlace.Users.Transactions;
 
     public class UsersController : Controller
     {
         [Dependency]
         public required IGetAllUsers GetAllUsers { private get; init; }
+
+        [Dependency]
+        public required IAddUser AddUser { private get; init; }
 
         // GET: Users
         [HttpGet]
@@ -28,7 +32,21 @@
         // GET: Users/Create
         public ActionResult Create()
         {
-            return View();
+            User user = new User()
+            {
+                CreatedAt = DateTime.Now,
+                UpdatedAt = DateTime.Now,
+                DirectManagerId = Guid.Parse("B38249BD-087A-40D7-840A-77D78175548A"),
+                Id = Guid.NewGuid(),
+                LastName = "Szasz",
+                FirstName = "Cris",
+                HiringLegalUnitId = Guid.Parse("58796ef4-cf00-4841-bfcd-9ceb33f35dc6"),
+                IsITResponsible = false
+            };
+
+            user = AddUser.Execute(user);
+
+            return View(user);
         }
 
         // POST: Users/Create

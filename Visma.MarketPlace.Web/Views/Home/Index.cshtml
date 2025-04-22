@@ -7,4 +7,6 @@
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 
     <button type="button" class="btn btn-primary" onclick="location.href='@Url.Action("ViewAll", "Users", new { area = "Api/Internal" })'">View All Users</button>
+
+    <button type="button" class="btn btn-primary" onclick="location.href='@Url.Action("Create", "Users", new { area = "Api/Internal" })'">Add User</button>
 </div>
